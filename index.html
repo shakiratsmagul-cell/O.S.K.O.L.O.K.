@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load only the primary display font to reduce payload -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    
+</head>
+<body>
+
+    <div class="wrapper">
+      <div class="content">
+        <section data-speed="0.9" class="main">
+            <img src="img/main image.png" alt="">
+            <div class="header">
+                <div class="header-sctn">
+                    <div class="header-box">
+                        <p class="logo">INFINITY</p>
+                        <div class="menu">
+                            <a href="aboutUs/index.html"><p>О НАС</p></a>
+                            <a href="project2/index.html"><p>ОБ ИСЛЕДАВАНИИ</p></a>
+                            <a href="project/index.html"><p>ПРОЕКТ</p></a>
+                        </div>
+                    </div>
+                    <a class="language" href="#">
+                        <p>Русский.</p>
+                        <img src="img/globe.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="section1">
+                <div data-speed="1.2" class="section1-div">
+                    <p class="text1">О.С.К.О.Л.О.К.</p>
+                    <p class="text2">Орбитальный Сборщик Конструкционных Обломков и Локального Отработанного Контента.</p>
+                    <button class="btn1">ПОДРОБНЕЕ</button>
+                    <button class="btn2">ПРОЕКТ</button>
+                </div>
+                <img data-speed="1.2" class="main-img" src="img/image robot.png" alt="">
+            </div>
+        </section>
+
+        <section data-speed="0.9" class="section2">
+            <img class="img-back" src="img/back.png" alt="">
+            <section>
+                            <div data-speed="1.1" class="model">
+                                <model-viewer 
+                                    src="./robot.glb"
+                                    camera-controls
+                                    auto-rotate
+                                    auto-rotate-delay="0"
+                                    camera-orbit="90deg 70deg 2.5m"
+                                    rotation-per-second="15deg"
+                                    shadow-intensity="1"
+                                    exposure="1"
+                                    style="width:100%; height:100vh;">
+                                </model-viewer>
+                            </div>
+                <div data-speed="1.2" class="section2-div">
+                    <p class="text1-sctn2">3D-прототип О.С.К.О.Л.О.К.</p>
+                    <p class="text2-sctn2">Перед вами интерактивная 3D-модель стартового прототипа нашего проекта.
+    Используйте управление для обзора объекта со всех ракурсов и масштабирования, чтобы детально изучить элементы конструкции.</p>
+                    <p class="text4-sctn2">Вокруг нашей планеты уже вращаются сотни и тысячи фрагментов космического мусора. И вместо того чтобы устремляться к изучению далёких миров, мы считаем важным сначала позаботиться о нашем доме — планете Земля.</p>
+                    <p class="text3-sctn2">И вот поэтому в перспективе мы рассматриваем создание автономных роботизированных систем, которые будут находиться на орбите Земли и осуществлять сбор космического мусора, предотвращая его дальнейшее накопление.</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="section3">
+            <img class="img-back" src="img/back.png" alt="">
+            <section>
+                <div data-speed="1.2" class="section3-box">
+                    <p class="text1-sctn2">Вокруг Земли на орбите</p>
+                    <p class="text2-sctn2">летает большое количество космического мусора — старые спутники, части ракет и мелкие обломки. Эти объекты движутся с огромной скоростью и представляют опасность для работающих спутников.</p>
+                    <p class="text3-sctn2">С каждым годом мусора становится всё больше из-за новых запусков и столкновений в космосе. Если проблему не решать, космический мусор может серьёзно усложнить использование околоземного пространства.</p>
+                </div>
+                <img class="img-section3" data-speed="1.1" src="img/image 4.png" alt="">
+            </section>
+        </section>
+
+        <section class="section4">
+            <img class="img-back" src="img/back2.png" alt="">
+            <section>
+               <div class="box4">
+                <p data-speed="1.1" class="text1-section4">Таким образом</p>
+               </div>
+               <div></div>
+               <div data-speed="1.1" class="box5">
+                <div class="text2-section4">
+                    <p>проект О.С.К.О.Л.О.К. нацелен на решение одной из наиболее острых проблем современного освоения космоса — накопления космического мусора на орбите Земли. Создание автономных роботизированных систем для его сбора позволит не только обезопасить работу действующих спутников, но и обеспечить свободное и безопасное использование орбитального пространства для будущих исследований, запусков и технологических миссий.</p>
+                </div>
+                <div class="text2-section4">
+                    <p>Забота о космическом «домe» нашей планеты сегодня — это не только вопрос безопасности и рационального использования ресурсов, но и инвестиция в устойчивое развитие человечества завтра. Именно своевременные действия помогут сохранить околоземное пространство чистым и пригодным для новых поколений исследователей и инженеров.</p>
+                </div>
+               </div>
+            </section>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
