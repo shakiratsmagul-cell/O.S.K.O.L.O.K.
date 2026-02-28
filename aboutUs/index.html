@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load only the primary display font to reduce payload -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+
+            <div class="header">
+                <div class="header-sctn">
+                    <div class="header-box">
+                        <a href="../index.html"><p class="logo">INFINITY</p></a>
+                        <div class="menu">
+                            <a href="#"><p>О НАС</p></a>
+                            <a href="../project2/index.html"><p>ОБ ИСЛЕДАВАНИИ</p></a>
+                            <a href="../project/index.html"><p>ПРОЕКТ</p></a>
+                        </div>
+                    </div>
+                    <a class="language" href="#">
+                        <p>Русский.</p>
+                        <img src="img/globe.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <section data-speed="0.9" class="section1">
+                <img class="img-back" src="img/back.png" alt="">
+                <section>
+                    <div data-speed="1.2" class="block">
+                        <p class="text1">Мы команда INFINITY -</p>
+                        <p class="text2">ученики 10 класса №13 гимназии города актау, и представляем вам видео ролик с ознакомлением нашего проекта О.С.К.О.Л.О.К., так же по кнопке ниже вы можете скачать и ознокомиться с писменной вариацией.</p>
+                        <button class="btn1" onclick="downloadFile()">Скачать файл</button>
+                    </div>
+
+                    <video width="650" controls>
+                        <source src="video.MOV" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                      </video>
+
+                </section>
+            </section>
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

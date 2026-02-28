@@ -1,0 +1,221 @@
+@media(min-width: 1000px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background: #030816;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .header {
+        width: 100%;
+        height: 10vh;
+        background-color: rgba(11, 16, 31, 0.35);
+        position: relative;
+    }
+    .header-sctn {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-box {
+        width: 45vw;
+        height: 100%;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .language {
+        width: 7vw;
+        height: 100%;
+        position: relative;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        color: white;
+        font-size: 1vw;
+        font-weight: 600;
+    }
+
+    .language img {
+        position: relative;
+        width: 2vw;
+        height: auto;
+    }
+
+    .logo {
+        font-size: 2vw;
+        font-weight: 500;
+        position: relative;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menu {
+        width: 27vw;
+        height: 100%;
+        position: relative;
+        right: 0px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu p {
+        color: #F2F2F2;
+        font-size: 0.9vw;
+        font-weight: 400;
+        transition: transform 0.15s ease, color 0.15s ease;
+    }
+
+    .menu p:hover {
+        color: white;
+        transform: scale(1.05);
+        transition: transform 0.15s ease, color 0.15s ease;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        overflow-x: hidden;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .section1 section {
+        width: 90%;
+        height: 100%;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.15;
+    }
+
+    .block {
+        width: 43vw;
+        height: 80%;
+        position: relative;
+        top: 3.5vh;
+    }
+
+    .text1 {
+        color: white;
+        font-size: 3.5vw;
+        position: relative;
+        font-weight: 600;
+    }
+
+    .text2 {
+        color: rgb(185, 179, 179);
+        font-size: 1.2vw;
+        position: relative;
+        line-height: 5vh;
+        font-weight: 400;
+        margin-top: -4vh;
+    }
+
+    #c {
+        width: 43vw;
+        height: 60%;
+        position: relative;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn1 {
+        width: 13vw;
+        height: 5vh;
+        margin-top: 2vh;
+        background: #F17029;
+        border: none;
+        border-radius: 0.25vw;
+        cursor: pointer;
+
+        color: white;
+        font-weight: 500;
+        font-size: 0.8vw;
+    }
+
+    .btn1:hover {
+        background: #F17029;
+        opacity: 0.8;
+        transition: opacity 0.15s ease;
+    }
+
+    .section2 {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .section2 section {
+        width: 90%;
+        height: 100%;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box {
+        width: 29vw;
+        position: relative;
+        height: 70vh;
+        background: rgb(241, 112, 41, 0.5);
+        border-radius: 1vw;
+    }
+
+    .text1-sctn2 {
+        color: white;
+        font-size: 3vw;
+        position: relative;
+        font-weight: 600;
+        top: 0;
+        left: 1vw;
+        margin-top: 4vh;
+    }
+
+    .text2-sctn2 {
+        color: rgb(185, 179, 179);
+        font-size: 1vw;
+        position: relative;
+        line-height: 5vh;
+        font-weight: 400;
+        left: 1vw;
+        width: 90%;
+        margin-top: -4vh;
+    }
+}

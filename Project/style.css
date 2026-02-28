@@ -1,0 +1,292 @@
+model-viewer {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1000px) {
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #020714;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.img-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(11, 16, 31, 0.35);
+    position: relative;
+}
+
+.header-sctn {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-box {
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2vw;
+    font-weight: 500;
+    color: white;
+}
+
+.menu {
+    width: 27vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu p {
+    color: #F2F2F2;
+    font-size: 0.9vw;
+    font-weight: 400;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.menu p:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.language {
+    width: 7vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.language img {
+    width: 2vw;
+    height: auto;
+}
+
+.main-section {
+    width: 90%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalic {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.box {
+    width: 48%;
+    padding: 3vw;
+    margin-top: -20vh;
+}
+
+.box h2 {
+    font-size: 1.8vw;
+    margin-bottom: 1.5vw;
+}
+
+.box .text1 {
+    font-size: 1vw;
+    line-height: 1.8;
+    margin-bottom: 2vw;
+    opacity: 0.85;
+}
+
+.main-features {
+    list-style: none;
+    padding: 0;
+}
+
+.main-features li {
+    font-size: 0.9vw;
+    margin-bottom: 0.8vw;
+    padding-left: 1.2vw;
+    position: relative;
+}
+
+.main-features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #5da9ff;
+}
+
+.btns {
+    position: absolute;
+    bottom: 10vw;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button {
+    width: 13vw;
+    height: 6vh;
+    background: rgba(11, 16, 31, 0.35);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btns button:hover {
+    background: white;
+    color: #020714;
+}
+
+.btns button.active {
+    background: white;
+    color: #020714;
+    border: 1px solid white;
+}
+
+/* Детальная секция */
+
+.details-section {
+    width: 100%;
+    padding: 6vw 0;
+    background: #020714;
+    position: relative;
+    overflow: hidden;
+}
+
+.details-container {
+    width: 60%;
+    position: relative;
+    left: 5%;
+    z-index: 1;
+}
+
+.details-section h2 {
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-top: 4vw;
+    margin-bottom: 1.5vw;
+    letter-spacing: 0.1vw;
+}
+
+.details-section p {
+    font-size: 0.95vw;
+    line-height: 1.9;
+    margin-bottom: 1.5vw;
+    opacity: 0.85;
+}
+
+.details-section .img-back {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.15;
+}
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.section2 {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.section2 section {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2 video {
+    width: 43vw;
+    height: 50vh;
+    border: none;
+    border-radius: 1vw;
+}
+
+.section2 div {
+    width: 40vw;
+    height: 50vh;
+    position: relative;;
+}
+
+.section2 .text1-section2 {
+    font-size: 4vw;
+    font-weight: 600;
+    color: white;
+}
+
+.section2 .text2-section2 {
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: white;
+    line-height: 4vh;
+    top: -5vh;
+    position: relative;
+}
+
+
+
+}

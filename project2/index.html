@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load only the primary display font to reduce payload -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+
+            <div class="header">
+                <div class="header-sctn">
+                    <div class="header-box">
+                        <a href="../index.html"><p class="logo">INFINITY</p></a>
+                        <div class="menu">
+                            <a href="../aboutUs/index.html"><p>О НАС</p></a>
+                            <a href="#"><p>ОБ ИСЛЕДАВАНИИ</p></a>
+                            <a href="../project/index.html"><p>ПРОЕКТ</p></a>
+                        </div>
+                    </div>
+                    <a class="language" href="#">
+                        <p>Русский.</p>
+                        <img src="img/globe.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <section data-speed="0.9" class="section1">
+                <img class="img-back" src="img/back.png" alt="">
+                <section>
+                    <div data-speed="1.2" class="block">
+                        <p class="text1">Космический мусор -</p>
+                        <p class="text2">это искусственные объекты, которые больше не используются и вращаются вокруг Земли. 
+                            Сюда входят 
+                            старые спутники, части ракет, 
+                            обломки после столкновений, металлические детали, болты и даже мелкие кусочки
+                             краски. Они движутся с огромной 
+                            скоростью и могут повреждать 
+                            действующие спутники и космические станции, создавая ещё
+                             больше обломков.</p>
+                             <button class="btn1">Узнать больше</button>
+                    </div>
+
+                    <canvas id="c"></canvas>
+
+                </section>
+            </section>
+
+            <section data-speed="0.9" class="section2">
+                <img class="img-back" src="img/back.png" alt="">
+                <section data-speed="1.1">
+                    <div class="box">
+                        <p class="text1-sctn2">В космосе</p>
+                        <p class="text2-sctn2">В космосе вокруг Земли находится огромное количество мусора. Десятки тысяч объектов имеют размер больше 10 сантиметров, около миллиона — от 1 до 10 сантиметров, и сотни миллионов составляют крошечные частицы. Даже самые маленькие обломки представляют опасность, так как их скорость может достигать до 28 000 километров в час.</p>
+                    </div>
+                    <div class="box">
+                        <p class="text1-sctn2">Опасность</p>
+                        <p style="font-size: 1vw;" class="text2-sctn2">В 2009 году спутник Iridium 33 столкнулся с неработающим спутником Cosmos 2251, создав более 2000 новых обломков.
+
+В 1996 году обломки китайской ракеты повредили японский спутник Ajisai.
+
+Даже маленькие частицы, например кусочки краски, могут пробить защитное стекло космических аппаратов и спутников.
+Из-за этого иногда Международной космической станции приходится менять траекторию, чтобы избежать столкновений.</p>
+                    </div>
+                    <div class="box">
+                        <p class="text1-sctn2">Орбиты и меры</p>
+                        <p class="text2-sctn2">Космический мусор сосредоточен на низкой орбите (200–2000 км). Его количество растёт из-за новых запусков и разрушения старых спутников. Для уменьшения угрозы разрабатываются технологии по удалению мусора и планируются ограничения на запуск новых аппаратов без безопасного утилизационного плана.</p>
+                    </div>
+                </section>
+            </section>
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
